@@ -52,6 +52,15 @@ public class NewEmptyJUnitTest {
       else {
       System.out.println("Please continue to drive safetly");
       }
+      if (speed > speedLimit + 15){
+      System.out.println("Your speed is" + speed + " If you continue driving with this speed there will be penalties ");
+      }
+      else if (speed < speedLimit + 15 && speed > speedLimit ) {
+      System.out.println("Your speed is " + speed + " , the speed limit is " + speedLimit + " You are speeding! Ticket for you!");
+      }
+      else {
+      System.out.println("Please continue to drive safetly");
+      }
       }
       
 }
