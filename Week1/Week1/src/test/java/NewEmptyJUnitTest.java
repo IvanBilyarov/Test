@@ -21,6 +21,7 @@ public class NewEmptyJUnitTest {
     boolean isBirthday = true;
     int speed = 40;
     int speedLimit = 50;
+    
     @Test
       public void hello()  {
       
@@ -39,7 +40,7 @@ public class NewEmptyJUnitTest {
       if (age >= 18) {
       System.out.println("That means you’re old enough to drink!");
       }
-      if (age >= 20 || age <= 39) {
+      if (age >= 20 && age <= 39) {
           System.out.println("You are in the 20s, 30s club!");
           
         }
@@ -61,6 +62,7 @@ public class NewEmptyJUnitTest {
       else {
       System.out.println("Please continue to drive safetly");
       }
+      
       }
       
 }
