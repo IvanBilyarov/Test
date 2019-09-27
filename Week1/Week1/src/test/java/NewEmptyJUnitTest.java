@@ -19,6 +19,8 @@ public class NewEmptyJUnitTest {
     String name = "Ivan";
     int age = 20;
     boolean isBirthday = true;
+    int speed = 40;
+    int speedLimit = 50;
     @Test
       public void hello()  {
       
@@ -44,8 +46,12 @@ public class NewEmptyJUnitTest {
       else {
       System.out.println("You are not in the 20s, 30s club!");
       }
-      
-  
+      if (speed > 50){
+      System.out.println("Your speed is" + speed + " , the speed limit is " + speedLimit + " You are speeding! Ticket for you!");
+      }
+      else {
+      System.out.println("Please continue to drive safetly");
+      }
       }
       
 }
