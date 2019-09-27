@@ -21,6 +21,8 @@ public class NewEmptyJUnitTest {
     boolean isBirthday = true;
     int speed = 40;
     int speedLimit = 50;
+    double price = 4.00;
+    boolean isStudent = true;
     
     @Test
       public void hello()  {
@@ -62,7 +64,15 @@ public class NewEmptyJUnitTest {
       else {
       System.out.println("Please continue to drive safetly");
       }
-      
+      if (age < 3 || age > 65){
+      System.out.println("free travel");
+      }
+      else if (age < 19 && isStudent == true){
+      System.out.println("You pay: " + price/2);
+      }
+      else {
+      System.out.println("You pay " + price);
+      }
       }
       
 }
