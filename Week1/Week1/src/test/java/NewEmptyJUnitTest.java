@@ -47,7 +47,7 @@ public class NewEmptyJUnitTest {
       else {
       System.out.println("You are not in the 20s, 30s club!");
       }
-      if (speed > 50){
+      if (speed > speedLimit){
       System.out.println("Your speed is" + speed + " , the speed limit is " + speedLimit + " You are speeding! Ticket for you!");
       }
       else {
