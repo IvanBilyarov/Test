@@ -73,6 +73,25 @@ public class NewEmptyJUnitTest {
       else {
       System.out.println("You pay " + price);
       }
+      double miles = 10;
+      double value = 50;
+      double priceToPay = 0;
+      if (value > 100 && miles <=10) {
+      System.out.println("Free");
+      }
+      else if(miles <=10){
+      System.out.println("5£");
+      }
+      else if(miles >10 && miles <20){
+      System.out.println("10£");
+      }
+      else if(miles < 30){
+       System.out.println("15£");
+      }
+      else {
+      priceToPay = (miles-30)*0.5+15;
+      System.out.println(priceToPay);
+      }
       }
       
 }
