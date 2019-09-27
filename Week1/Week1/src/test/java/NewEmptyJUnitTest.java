@@ -37,7 +37,15 @@ public class NewEmptyJUnitTest {
       if (age >= 18) {
       System.out.println("That means you’re old enough to drink!");
       }
- 
+      if (age >= 20 || age <= 39) {
+          System.out.println("You are in the 20s, 30s club!");
+          
+        }
+      else {
+      System.out.println("You are not in the 20s, 30s club!");
+      }
+      
+  
       }
       
 }
